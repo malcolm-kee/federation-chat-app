@@ -1,0 +1,43 @@
+@import '../../constants';
+
+.root {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.msg {
+  max-width: 95%;
+  border-radius: $space-2;
+}
+
+.tail {
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  top: 0px;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-top: 20px solid $gray-100;
+  border-left: 16px solid transparent;
+}
+
+.tailIsMe {
+  left: auto;
+  right: -8px;
+  border-left: none;
+  border-top: 20px solid $teal-100;
+  border-right: 16px solid transparent;
+}
+
+.padEnd {
+  display: inline-block;
+  width: 56px;
+}
+
+.time {
+  position: absolute;
+  right: $space-3;
+  bottom: $space-1;
+  color: $gray-500;
+}
